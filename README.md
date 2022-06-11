@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below:
 ![image](https://user-images.githubusercontent.com/106046849/173168268-c9c7c377-2c54-4fdd-81d0-256c76049804.png)
 
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook-file may be used to install only certain pieces of it, such as Filebeat.
 
 [Ansible/ansible_config.yml](https://github.com/ShamanOxy/ELK-Stack-Project/blob/main/Ansible/ansible_config.yml)
 
@@ -24,22 +24,19 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly stable, in addition to restricting demand to the network.
+Load balancers prevent server overload and improve application availability and responsiveness.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system performance. Metricbeat takes the statistics and it ships them to either Elasticsearch or Logstash. Filebeat is a shipper for forwarding and centralizing log data.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Jump Box | Gateway  | 23.100.111.137  | Linux            |
+| Web-1    | WebApp   | 10.0.0.5   | Linux            |
+| Web-2    | WebApp   | 10.0.0.6   | Linux            |
+| ELK-VM   | Elk-Stak | 20.213.243.25   | Linux            |
 
 ### Access Policies
 
