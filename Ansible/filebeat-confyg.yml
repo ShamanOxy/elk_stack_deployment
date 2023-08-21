@@ -14,66 +14,66 @@ filebeat.modules:
 #-------------------------------- System Module --------------------------------
 #- module: system
   # Syslog
-  #syslog:
-    #enabled: true
+  # syslog:
+    # enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    #var.paths:
+    # var.paths:
 
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
-    #input:
+    # input:
 
   # Authorization logs
-  #auth:
-    #enabled: true
+  # auth:
+    # enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    #var.paths:
+    # var.paths:
 
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
-    #input:
+    # input:
 
 #-------------------------------- Apache Module --------------------------------
 #- module: apache
   # Access logs
-  #access:
-    #enabled: true
+  # access:
+    # enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    #var.paths:
+    # var.paths:
 
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
-    #input:
+    # input:
 
   # Error logs
-  #error:
-    #enabled: true
+  # error:
+    # enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    #var.paths:
+    # var.paths:
 
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
-    #input:
+    # input:
 #-------------------------------- Auditd Module --------------------------------
 #- module: auditd
-  #log:
-    #enabled: true
+  # log:
+    # enabled: true
 
     # Set custom paths for the log files. If left empty,
     # Filebeat will choose the paths depending on your OS.
-    #var.paths:
+    # var.paths:
 
     # Input configuration (advanced). Any input configuration option
     # can be added under this section.
-    #input:
+    # input:
 
 #---------------------------- Elasticsearch Module ----------------------------
 - module: elasticsearch
