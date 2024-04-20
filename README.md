@@ -1,4 +1,4 @@
-# ELK-Stack-Project
+# ELK-Stack Tutorial/Deployment
 Elk Stack Deployment
 ## Automated ELK Stack Deployment
 
